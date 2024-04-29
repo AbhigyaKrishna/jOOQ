@@ -66,6 +66,7 @@
         <jackson.version>2.16.1</jackson.version>
         <jackson.version.databind>2.16.1</jackson.version.databind>
         <jetbrains.annotations.version>24.1.0</jetbrains.annotations.version>
+        <reactor.version>3.6.5</reactor.version>
     </properties>
 
     <licenses>
@@ -179,12 +180,12 @@
             <dependency>
                 <groupId>io.projectreactor</groupId>
                 <artifactId>reactor-core</artifactId>
-                <version>3.6.1</version>
+                <version>${reactor.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.projectreactor</groupId>
                 <artifactId>reactor-test</artifactId>
-                <version>3.6.1</version>
+                <version>${reactor.version}</version>
             </dependency>
 
             <!-- Data binding -->
@@ -863,18 +864,7 @@
 
         <module>jOOQ-xtend</module>
 
-
-
-
-
-
-
-
-
-
-
-
-
+        <module>jOOQ-reactive</module>
 
 
     </modules>
